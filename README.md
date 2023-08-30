@@ -1,8 +1,10 @@
-# React + Vite
+# Requisições HTTP em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi criado para estudar requisições http em react usando fetch.
+Para este projeto foi criado um servidor local onde as informações são guardadas e resgatadas.
 
-Currently, two official plugins are available:
+Foi criado também um hook chamado aqui de useFetch para, além de exercitar os conhecimentos nesse quesito, dividir as funções em componentes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para rodar este projeto é necessário rodar npm install.
+
+também se faz necessário, em dois terminais diferentes, rodando simultâneamente "npm run dev" e "npm run server"
