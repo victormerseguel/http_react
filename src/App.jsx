@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useFetch } from "./hooks/useFetch";
+import { useJsonCoin } from "./hooks/useJsonCoin";
 
 const url = "http://localhost:3000/products";
 // const url = ""; // forçando erro com url vazia
@@ -81,8 +82,7 @@ function App() {
         {items
           ? items.map((item) => (
               <li key={item.id}>
-                {item.name} - R${" "}
-                {Number(item.price).toFixed(2).toString().replace(".", ",")}
+                {item.name} - R$ {useJsonCoin(item.price)}
               </li>
             ))
           : null}
